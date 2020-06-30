@@ -1,30 +1,202 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio homepage">
+    <meta name="author" content="Sarah Nagaratnam">
+    <title>Sarah Nagaratnam Portfolio</title>
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+<!-- Navigation -->
+      <nav class="site-header sticky-top py-1" style="background-color:#052137;">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" style="color:#F5F5F5;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          </a>
+          <a class="py-2 d-none d-md-inline-block" href="#" style="color:#F5F5F5;">Professional Work</a>
+          <a class="py-2 d-none d-md-inline-block disabled" href="#" style="color:#F5F5F5;">Personal Projects</a>
+          <a class="py-2 d-none d-md-inline-block disabled" href="#" style="color:#F5F5F5;">Resume</a>
+        </div>
+      </nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron paral paralsec" style="background-image:url(img/home-banner-dark.png)">
+  <h1 class="display-3">UnitedHealthcare's Individual Health Record</h1>
+  <p class="lead">Creating a provider training resource for UnitedHealthcare’s Individual Health Record</p>
+  </p>
+  </div>
+
+    <section id="background" style="padding-top:20px; padding-left: 75px; padding-right: 75px;">
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <h2 class="little-section-title"><mark class="dark-mark">Background</mark></h2>
+                  <h3 class="display-5">Gaps in patient records make it harder to deliver quality care</h3>
+                  <p>Healthcare providers rely on patient records to keep track of a patient’s health and medical history, and having access to thorough and up-to-date information helps them better address the patient's health care needs. <mark>However, if the patient gets care outside the practice or provider network (say, at an Urgent Care center while out of town), this information won't be reflected in their Primary Care Physician's records unless the patient tells them about it.</mark>
+                  </p>
+                  <p>When new information needs are uncovered during a visit, the provider may have to ask the patient to tell them about the care they received — this adds a burden on the patient to correctly remember the details of their visit. Consequences of not having a complete picture of the patient's care history include ordering duplicative tests or prescribing contraindicative treatment, which may pose a serious health risk to the patient.
+                  </p>
+                  <p>That said, the patient's care history <em>is</em> still documented somewhere, and, with some effort on the provider's part, it could be accessed. Contacting the patient’s other providers, requesting records, and incorporating the data into one’s own system, however, can be time- and resource-intensive. But what if this information, from disparate sources, were pulled into a single place for you?</p>
+              </div>
+              <div class="col-md-auto">
+                  <img src="img/test-accent-image.png" class="img-fluid" style="width:200px; margin-top:50px; margin-bottom:50px;" alt="Responsive image">
+              </div>
+          </div>
+          <div class="row">
+              <!-- <div class="col-md-auto">
+                  <img src="img/ihr.png" class="img-fluid" style="width:400px; margin-top:50px; margin-bottom:50px;" alt="Responsive image">
+              </div> -->
+              <div class="col">
+                  <h3 class="display-5">A new tool to help fill the gaps</h3>
+                  <p>Information about the patient’s care history doesn’t live only in practice records. If the patient uses their health insurance to cover their care, their providers must submit claims to the health insurance company (the “payer”) to be paid for their services. Claims include details about the care the patient received such as diagnoses, tests, and procedures — information providers could use to deliver more informed care if they had easier access to it.
+                  </p>    
+                  <p>UnitedHealthcare saw this as an opportunity to improve patient/provider collaboration and care. In 2019, the payer launched the <mark>Individual Health Record,  a tool that, for providers, “consolidates and securely stores an individual’s health story into one comprehensive digital record, even if your patients see other providers.”</mark> IHR displays information about services patients receive as UHC members, referencing claims, labs, and other data sources. To protect patient privacy, there is a secure access process and sensitive health data is hidden from non-clinician users.
+                  </p>
+                  <p>From UHC’s standpoint, IHR should appeal to providers who accept UHC members, as it’s an easily-accessible resource for up-to-date information about the patient’s care history.
+                  </p>
+                  <p>
+                  But would providers actually use it?
+                  </p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="challenge" style="background-color:#F5F5F5; padding-top:30px; padding-bottom:40px;">
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <h2 class="little-section-title"><mark class="dark-mark">Challenge</mark></h2>
+                  <h3 class="display-5">Pitching UHC's Individual Health Record to providers</h3>
+                  <p>Pilot users of IHR liked the breadth and general timeliness of the data presented in IHR, and felt it gave them a better line of sight to care their patients received outside their practice. However, they weren’t as keen on limitations such as:
+                  </p>    
+                  <ul>
+                    <li>The learning curve required to master the tool (including interpreting the information presented)
+                    </li>
+                    <li>The limited scope of patients included (only UHC members)
+                    </li>
+                    <li>A lack of integration with their existing digital systems
+                    </li>
+                    <li>
+                    The inability to tailor the interface to prioritize the information they needed
+                    </li>
+                  </ul>
+                  <p>These limitations made it more challenging for providers to adopt IHR into their regular workflows. Some users said they would only use the tool if they could make the time.
+                  </p>
+                  <p>While IHR will evolve to address these limitations, UHC wanted to encourage use of the current iteration of the tool. To support this effort, I was tasked with creating a resource for use in IHR training sessions with provider groups.
+                  </p>
+                </div>
+              <div class="col-md-auto">
+                  <img src="img/test-accent-image.png" class="img-fluid" style="width:200px; margin-top:50px; margin-bottom:50px;" alt="Responsive image">
+              </div>
+          </div>
+          <div class="row">
+            <h3 class="display-5">Highlighting what works well and alleviating pain points</h3>
+            <p>To create a training resource that spoke to providers’ needs, I worked with my team’s lead researcher, Donna Foster, to gather and analyze pilot users’ feedback on the tool: what information in IHR did they find most useful? What barriers did they encounter interacting with the tool?
+            </p>    
+            <p>Influencing the user interface and architecture of IHR was out of scope for our assignment — we couldn’t do much to address the limited patient scope and lack of digital integration. However, we could try to lower the learning curve for users.
+            </p>
+            <p>Ultimately we chose to focus on the following key concepts to design the resource around:
+            </p>
+            <ul>
+              <li>Give me ideas on how to use IHR in my workflows.
+              </li>
+              <li>Show me how to navigate the interface efficiently to quickly find the information I’m looking for.
+              </li>
+              <li>Explain what the data and labels in IHR mean, and if there are limitations I should keep in mind (such as how far back the data goes).
+              </li>
+            </ul>
+            <p>We also considered the following: since changing the user interface and architecture of IHR itself was out of scope for our assignment, how might we instead…
+            </p>
+            <ul>
+              <li>Keep the training resource “fresh” and up-to-date as IHR evolves?
+              </li>
+              <li>Make IHR’s many “portlets” (e.g., Health Conditions, Immunizations, Visits) and data as clear as possible to users?
+              </li>
+              <li>Accommodate the variety of clinical and non-clinical roles that could use IHR?
+              </li>
+            </ul>
+          </div>
+      </div>
+    </section>
+
+    <section id="Proposal" style="padding-top:20px;">
+      <div class="container" style="padding-bottom:40px;">
+          <div class="row">
+              <div class="col">
+                  <h2 class="little-section-title"><mark class="dark-mark">Initial Proposal</mark></h2>
+                  <h3 class="display-5">An online toolkit on IHR
+                  </h3>
+                  <p>We arrived at the idea for a dynamic online “toolkit”  that would serve as a comprehensive guide to IHR. I created a proposal and presented it to the outreach committee.
+                  </p>
+                  <p>The initial concept proposal was well-received by the committee and internal clinicians. However, as I fleshed out the idea, the list of requirements grew. I broke it down into iterative stages, focusing on high-value areas of IHR first. But a new request from the committee with a much shorter timeline required more aggressive prioritization.
+                  </p>
+              </div>
+              <div class="col-md-auto">
+                  <img src="img/test-accent-image.png" class="img-fluid" style="width:200px; margin-top:50px; margin-bottom:50px;" alt="Responsive image">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-auto">
+                  <img src="img/ihr.png" class="img-fluid" style="width:400px; margin-top:50px; margin-bottom:50px;" alt="Responsive image">
+              </div>
+              <div class="col">
+                  <h3 class="display-5">Adjusting priorities to meet changing needs</h3>
+                  <p>The outreach committee shared there was going to be an upcoming training with a provider group, and they needed a resource on use cases within the next month to use in the training. Faced with a much shorter timeline, I changed directions to focus on mapping a walkthrough for 2 basic use cases, which Donna and I had planned to include in the toolkit: new patient intake and filling gaps in a record for a “snowbird” patient who lived in 2 states. I created this resource in PowerPoint so it could be easily shared between trainers and used in training sessions, and potentially shared with providers as a takeaway.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="deliverables" style="background-color:#052137; padding-top:30px; padding-bottom:40px;">
+      <div class="container" style="color:#F5F5F5;">
+        <div class="row">
+          <div class="col">
+            <h2 class="little-section-title"><mark class="dark-mark">Deliverables</mark></h2>
+            <h3 class="display-5">IHR Provider Use Cases</h3>
+            <p>The following use cases, informed by provider and clinical staff interviews, are intended to help users apply current-state IHR to clinical workflows. These use cases provide examples of information available in IHR and how to navigate the tool.</p>
+            <p>These use cases are not intended to represent complete workflows (showing all information a provider might need to complete a workflow) or show a “correct” way to navigate IHR as there are many paths to find information.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col order-first" align="center">
+            <img src="img/edgar.png" style="width:150px;" alt="Photo of a smiling senior man.">
+          </div>
+          <div class="col order-second">
+            <p><strong>The Patient</strong></p>
+            <p>Edgar, a UHC member, recently moved and needs to find a provider near his new home. He has found an in-network provider and scheduled his first appointment.</p>
+          </div>
+          <div class="col order-third" align="center">
+            <img src="img/lisa.png" style="width:150px;" alt="Photo of a young professional woman.">
+          </div>
+          <div class="col order-fourth">
+            <p><strong>The Provider</strong></p>
+            <p>Physician Assistant Lisa is preparing for Edgar’s first visit at the practice. She’ll consult Edgar’s IHR to learn more about his health and medical history, which she’ll document in the practice’s records and patient intake form. She’ll ask Edgar to review and verify the pre-filled patient intake form (and fill in any missing information) when he arrives.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <img src="img/lisa.png" style="width:150px;" alt="Photo of a young professional woman.">
+          </div>
+          <div class="col">
+            <div class="box sb2">I see that Edgar is covered under UnitedHealthcare insurance. My first action is to see what Edgar’s Individual Health Record (IHR) can tell me about his health and medical history. To prepare for his first appointment at our practice, I need to gather information for the physician to review.</div> 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
 </html>
