@@ -1,0 +1,164 @@
+
+.box {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #f5f5f5;
+  padding: 20px;
+  text-align: left;
+  font-weight: 100px;
+  color: #052137;
+  position: relative;
+}
+
+.sb2:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #f5f5f5;
+  border-top: 10px solid #f5f5f5;
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
+}
+
+.section-title {
+  color: #052137;
+  font-weight:400;
+  line-height:1.25;
+  padding:2 2 2 2px;
+}
+
+.little-section-title {
+ font-family: 'Slabo 27px', serif;
+}
+
+.dark-mark {
+  background-color:#052137;
+  border-color: #F5F5F5;
+  border-width: 5px;
+  color:#F5F5F5;
+  font-size: 1.25rem;
+  border-radius: 3px;
+}
+
+/* Header Parallax Element Style*/ 
+.paral {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  }
+  
+  /* Paragrapgh for Parallax Section */ 
+  .paral p {
+  font-size: 24px;
+  color:#F5F5F5;
+  text-align: center;
+  line-height: 60px;
+  }
+  
+  /* Heading for Parallax Section */ 
+  .paral h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 60px;
+  text-align: center;
+  padding-top: 60px;
+  line-height: 100px;
+  }
+
+  .paralsec {
+    background-image: url("img/home-banner.png");
+    }
+
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron{margin-bottom: 0;}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.halfunderline:before {
+  content: "";
+  background-color: #4C6DC1;
+  height: 0.8rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+  z-index: -1;
+}
+
+.expand:before {
+  transform: scaleY(1);
+  transition: 0.2s ease-in-out 0.2s;
+}
+
+.expand:hover:before {
+  transform: scaleY(1.5);
+  transition: 0.2s ease-in-out 0.2s;
+}
+
+.show-left:before {
+  -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+  -moz-transition: -moz-transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+  transition: transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+}
+.show-left:hover:before {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.show-up:before {
+  -webkit-transform-origin: left bottom;
+  -moz-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  -o-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+  -moz-transition: -moz-transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+  transition: transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+}
+.show-up:hover:before {
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.show-middle:before {
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+  -moz-transition: -moz-transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+  transition: transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.show-middle:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
